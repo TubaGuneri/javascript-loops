@@ -11,7 +11,9 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
-
+for (let i = 0; i <  ; i++) {
+    
+}
 
 
 
