@@ -11,10 +11,10 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
-for (let i = 0; i <  ; i++) {
-    
-}
-
+/*const stars = '*';
+for (let i = 0; i < 6; i++) {
+console.log(stars.repeat(i))
+ }*/
 
 
 // ==========================================
@@ -26,9 +26,13 @@ for (let i = 0; i <  ; i++) {
 // loop...
 // klaar!
 // ==========================================
-
-
-
+const word = 'loop...';
+for (let i = 1; i < 5; i++) {
+    console.log(word.repeat(i));
+    if ((i >= 4)) {
+        console.log('klaar!');
+    }
+}
 
 
 // ==========================================
@@ -47,10 +51,15 @@ for (let i = 0; i <  ; i++) {
 // >> 9
 // ==========================================
 
+/*for (let i = 0; i < 10; i++) {
+    console.log(i);
 
-
-
-
+    if ((i>=3) || (i<6)){
+        console.log('>' + i);
+    } else if (i >= 6) {
+        console.log('>>' + i);
+    }
+}*/
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz".
@@ -89,5 +98,13 @@ for (let i = 0; i <  ; i++) {
 // etc.
 // ==========================================
 
+/*for (let i = 0; i <= 100; i++) {
+    console.log(i);
+}
 
-
+for (let i = 1; i < 101; i++) {
+    if (i % 15 === 0) console.log("FizzBuzz");
+    else if (i % 3 === 0) console.log("Fizz");
+    else if (i % 5 === 0) console.log("Buzz");
+    else console.log(i);
+}*/
