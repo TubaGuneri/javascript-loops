@@ -7,19 +7,19 @@ const scores = [
     {name: 'David', score: 77, grade: null},
     {name: 'Khalid', score: 92, grade: null},
     {name: 'Rianne', score: 66, grade: null}
-];
+]
+
+
+
+for (let i = 0; i <scores.length; i++)
+    console.log(scores[i].score);
 
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
-// 66ç
+// 66
 // ==========================================
-
-
-
-
-
 // ==========================================
 // Opdracht 1b
 // Breid je script uit door voor iedere student de score om te rekenen naar een letter en dit in de terminal te printen
@@ -31,8 +31,13 @@ const scores = [
 // A
 // D
 // ==========================================
-
-
+//
+for (let i = 0; i <scores.length; i++) {
+    switch(scores[i].score) {
+        case 'A': scores[i].score > 100;
+        break;
+    }
+}
 
 
 
@@ -56,13 +61,14 @@ const scores = [
 // ==========================================
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
-
+//
 const NOVIEmployees = [
     {firstName: 'Nova', lastName: 'Eeken'},
     {firstName: 'Sam', lastName: 'Barnhoorn'},
     {firstName: 'Tessa', lastName: 'Steur'},
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
+
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
@@ -74,18 +80,23 @@ const NOVIEmployees = [
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
 //  ];
 // ==========================================
+for (let i = 0; i <NOVIEmployees.length; i++) {
+    const emailAdress = `${NOVIEmployees[i].firstName}.${NOVIEmployees[i].lastName}@novi.nl`;
 
-
-
-
-
+    NOVIEmployees[i].email = emailAdress;
+    console.log(NOVIEmployees);
+}
+//DONE!
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
+for (let i = 0; i <NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = (`${NOVIEmployees[i].firstName}.${NOVIEmployees[i].firstName}@novi.nl`).toLowerCase();
+}
 
-
+console.log(NOVIEmployees);
 
 // ==========================================
 // Opdracht 3
@@ -99,21 +110,42 @@ const NOVIEmployees = [
 //  3581 = Oudwijk
 //  3583 = Schildersbuurt
 
-const students = [
-    {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
-    {name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: null},
-    {name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: null},
-    {name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: null},
-    {name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: null},
-    {name: 'Florien', city: 'Utrecht', zipCode: '3513', neighborhood: null},
-    {name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: null},
-    {name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: null},
-    {name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-    {name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-    {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
-    {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-];
+// const students = [
+//     {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
+//     {name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: null},
+//     {name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: null},
+//     {name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: null},
+//     {name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: null},
+//     {name: 'Florien', city: 'Utrecht', zipCode: '3513', neighborhood: null},
+//     {name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: null},
+//     {name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: null},
+//     {name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+//     {name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+//     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
+//     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+// ];
+//
+for (let i = 0; i <students.length; i++) {
+    switch (students[i].zipCode) {
+        case '3513': students[i].neighborhood = 'Pijlsweerd';
+        break;
+        case '3514': students[i].neighborhood = 'Vogelenbuurt';
+            break;
+        case '3512': students[i].neighborhood = 'Binnestad';
+            break;
+        case '3531': students[i].neighborhood = 'Lombok';
+            break;
+        case '3572': students[i].neighborhood = 'Wittevrouwen';
+            break;
+        case '3581': students[i].neighborhood = 'Oudwijk';
+            break;
+        case '3583': students[i].neighborhood = 'Schildersbuurt';
+            break;
+    }
+}
+console.log(students);
 
+//DONE!
 // Verwachte uitkomsten:
 // [
 //     { name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },

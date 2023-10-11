@@ -4,13 +4,14 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
-console.log(names.length);
-for (let i = 0; i < names.length ; i++) {
-    names[i] = names[i] + 'je';
-}
-console.log(names);
+// const names = ["Henk", "Piet", "Fred", "Joop"];
+// console.log(names.length);
+// for (let i = 0; i < names.length ; i++) {
+//     names[i] = names[i] + 'je';
+// }
+// console.log(names);
 
+//DONE!
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -25,16 +26,26 @@ console.log(names);
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
-
-for (var i = 0;i < numbers.length; i++) {
+console.log(numbers);
+for (let i = 0; i <numbers.length ; i++) {
     if (numbers[i]%2 ===0){
-        console.log(numbers[i] * 2);
-    } else {
-        console.log(numbers[i] * 3);
+    numbers[i]= numbers[i]*2;
+    } if (numbers[i]%2 !==0) {
+        numbers[i]= numbers[i]*3;
     }
-
 }
+console.log(numbers);
 
+// for (var i = 0;i < numbers.length; i++) {
+//     if (numbers[i]%2 ===0){
+//         console.log(numbers[i] * 2);
+//     } else {
+//         console.log(numbers[i] * 3);
+//     }
+//
+// }
+
+//DONE!
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
@@ -52,8 +63,8 @@ for (var i = 0;i < numbers.length; i++) {
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
-for (var i = 0;i <squares.length; i++)
+// const squares = [30, 2, 8, 24, 11];
+// for (var i = 0;i <squares.length; i++)
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:

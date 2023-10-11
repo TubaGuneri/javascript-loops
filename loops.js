@@ -34,7 +34,7 @@ for (let i = 1; i < 5; i++) {
     }
 }
 
-
+//NOT DONE!!!
 // ==========================================
 // Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
@@ -60,6 +60,8 @@ for (let i = 1; i < 5; i++) {
         console.log('>>' + i);
     }
 }*/
+
+// NOT DONE!!!
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz".
@@ -108,3 +110,5 @@ for (let i = 1; i < 101; i++) {
     else if (i % 5 === 0) console.log("Buzz");
     else console.log(i);
 }*/
+
+//DONE!
