@@ -4,12 +4,12 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-// const names = ["Henk", "Piet", "Fred", "Joop"];
-// console.log(names.length);
-// for (let i = 0; i < names.length ; i++) {
-//     names[i] = names[i] + 'je';
-// }
-// console.log(names);
+const names = ["Henk", "Piet", "Fred", "Joop"];
+console.log(names.length);
+for (let i = 0; i < names.length ; i++) {
+    names[i] = names[i] + 'je';
+}
+console.log(names);
 
 //DONE!
 // Verwachtte uitkomsten:
@@ -28,24 +28,15 @@
 const numbers = [2, 4, 5, 29, 38];
 console.log(numbers);
 for (let i = 0; i <numbers.length ; i++) {
-    if (numbers[i]%2 ===0){
-    numbers[i]= numbers[i]*2;
-    } if (numbers[i]%2 !==0) {
-        numbers[i]= numbers[i]*3;
+    if (numbers[i]%2 === 0){
+    numbers[i] = numbers[i] * 2;
+    } else if (numbers[i] % 2 !== 0) {
+        numbers[i] = numbers[i] * 3;
     }
 }
 console.log(numbers);
 
-// for (var i = 0;i < numbers.length; i++) {
-//     if (numbers[i]%2 ===0){
-//         console.log(numbers[i] * 2);
-//     } else {
-//         console.log(numbers[i] * 3);
-//     }
-//
-// }
 
-//DONE!
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
@@ -63,8 +54,8 @@ console.log(numbers);
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-// const squares = [30, 2, 8, 24, 11];
-// for (var i = 0;i <squares.length; i++)
+const squares = [30, 2, 8, 24, 11];
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -78,3 +69,11 @@ console.log(numbers);
 //   'Het volume van 24 is 13824',
 //   'Het volume van 11 is 1331'
 //]
+
+for (let i = 0; i <squares.length; i++) {
+    let volume = squares[i] * squares[i] * squares[i];
+    squares[i] =`Het volume van ${squares[i]} is ${volume}`;
+}
+console.log(squares);
+
+
